@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+/* Fond global avec image */
+body {
+  background: url('/assets/images/bg1.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Harmonisation globale */
+/* styles.css */
+header, main, footer,
+.projects, .about {
+  background-color: rgba(255, 255, 255, 0.85); /* transparent blanc */
+  backdrop-filter: blur(4px); /* optionnel pour effet de verre */
+}
+
+/* Header */
+.header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+nav.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #004080;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #004080;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #002d5e;
+}
+
+button.navbar-toggler {
+  border: none;
+  background: none;
+  display: none;
+  cursor: pointer;
+}
+
+span.navbar-toggler-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #004080;
+  display: block;
+  position: relative;
+}
+
+span.navbar-toggler-icon::before,
+span.navbar-toggler-icon::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #004080;
+  position: absolute;
+  left: 0;
+}
+
+span.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+span.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  background-color: transparent;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.download-btn {
+  padding: 8px 16px;
+  background-color: #004080;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #002d5e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 0;
+    display: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  button.navbar-toggler {
+    display: block;
+  }
+
+  .footer .container {
+    padding: 0 10px;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.95rem;
+  }
+}
