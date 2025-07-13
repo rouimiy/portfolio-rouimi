@@ -18,7 +18,7 @@ export class Experiences implements AfterViewInit{
     let index = 0;
 
     const updateSlide = () => {
-      const offset = cards[0].clientWidth + 20; // card + gap
+      const offset = cards[0].clientWidth + 20;
       track.style.transform = `translateX(-${index * offset}px)`;
     };
 
@@ -36,7 +36,7 @@ export class Experiences implements AfterViewInit{
       }
     });
 
-    updateSlide(); // initial
+    updateSlide();
   }
 
 }
