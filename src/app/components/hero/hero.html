@@ -1,8 +1,93 @@
-<section class="hero" data-aos="fade-in">
-  <div class="content">
-    <img ngSrc="assets/language.png" alt="Photo de Youssef" class="profile-photo" height="962" width="974"/>
-    <h1>Youssef Rouimi</h1>
-    <p>Développeur Full Stack Java / Angular</p>
-    <a routerLink="/experiences" class="cta">Voir mes expériences</a>
+<!-- Nouveau HeroComponent HTML pour page d'accueil moderne -->
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Youssef Rouimi</span></h1>
+      <h2>Full Stack Developer</h2>
+      <p class="tech">Java / Angular</p>
+      <a href="/experiences" class="cta-button">Voir mes expériences</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/language.png" alt="Youssef Rouimi avatar">
+    </div>
   </div>
 </section>
+
+<section class="about-quick" id="skills">
+  <h2>Compétences</h2>
+  <p class="tech-subtitle">Ce que je maîtrise</p>
+
+  <div class="tech-summary">
+    <div class="tech-box">
+      <img src="assets/icons/angular.svg" alt="Angular">
+      <h3>Angular</h3>
+      <p>Création d'apps web dynamiques avec composants réutilisables.</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="assets/icons/java.svg" alt="Java">
+      <h3>Java</h3>
+      <p>Back-end robuste avec Spring Boot et API REST.</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="assets/icons/spring.svg" alt="Spring Boot">
+      <h3>Spring Boot</h3>
+      <p>Framework Java pour créer des API REST sécurisées et performantes.</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="assets/icons/rest.jpg" alt="API REST">
+      <h3>API REST</h3>
+      <p>Conception d’API RESTful claires, documentées et maintenables.</p>
+    </div>
+
+    <div class="tech-box">
+      <img src="assets/icons/git.svg" alt="Git">
+      <h3>Git</h3>
+      <p>Gestion de version avec Git, GitHub, GitLab. Branching et CI.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero-about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="assets/profil1.png" alt="Youssef Rouimi portrait">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <h4>Get to Know Me</h4>
+      <p>
+        Développeur Full Stack passionné, avec plus de 8 ans d'expérience dans le développement d’applications web
+        performantes. Spécialisé en Java (Spring Boot) et Angular, j’interviens sur l’ensemble du cycle de
+        développement, de la conception à la mise en production, en passant par l’intégration continue.
+
+        Mes projets m’ont permis de travailler dans des environnements complexes (AWS, Kafka, architectures hexagonales,
+        CQRS, programmation réactive), avec une forte attention à la qualité du code (tests unitaires, revue de code,
+        CI/CD).
+
+        J’ai évolué dans des contextes agiles (Scrum, SAFe), sur des missions à fort enjeu chez GRTgaz, Abeille
+        Assurance, Enedis, Crédit Logement et Viamedis.
+
+        Aujourd’hui, je cherche à mettre mes compétences au service de projets techniques ambitieux, dans une équipe
+        engagée et collaborative.
+      </p>
+      <a href="assets/cv.pdf" class="cta-download" download>Télécharger mon CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- Client teaser -->
+<section class="clients-hero" data-aos="fade-up">
+  <h2>Ils m'ont fait confiance</h2>
+  <div class="clients-logos">
+    <img src="assets/clients/grtgaz.png" alt="GRTgaz">
+    <img src="assets/clients/abeille.png" alt="Abeille Assurance">
+    <img src="assets/clients/enedis.png" alt="Enedis">
+    <img src="assets/clients/credit_logement.png" alt="Crédit Logement">
+    <img src="assets/clients/viamedis.png" alt="Viamedis">
+  </div>
+</section>
+

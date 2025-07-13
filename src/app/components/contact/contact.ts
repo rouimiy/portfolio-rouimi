@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './contact.css'
 })
 export class Contact {
-  onSubmit() {
+  sendEmail() {
     (window as any).emailjs.sendForm(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
+      'service_m39n7fr',
+      'template_q4k9wrl',
       document.querySelector('form'),
-      'YOUR_USER_ID'
+      'uKIJupGKF4Eef-PX9'
     ).then((result: any) => {
       alert('Message envoyé avec succès !');
     }, (error: any) => {

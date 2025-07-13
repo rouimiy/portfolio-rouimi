@@ -80,16 +80,18 @@ span.navbar-toggler-icon::after {
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .nav-links {
-    position: absolute;
-    top: 60px;
+    position: fixed; /* au lieu de absolute */
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
-    background-color: white;
-    padding: 20px 0;
+    background-color: #1A357E;
+    padding: 60px 30px 30px; /* ajouter espace sous le header */
     display: none;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
   }
 
   .nav-links.open {
@@ -98,5 +100,8 @@ span.navbar-toggler-icon::after {
 
   button.navbar-toggler {
     display: block;
+    z-index: 1000; /* s'assurer qu'il reste visible */
+    position: relative;
   }
 }
+
